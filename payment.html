@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles_payment.css">
+    <link rel="icon" type="image/x-icon" href="Images\icon.webp" >
+    <script src="payment.js" defer></script>
+</head>
+<body>
+    <!-- Main title -->
+    <h1 class="payment-header">Payment</h1>
+    <!-- Content -->
+    <section class="content-payment">
+        <!-- Payment summary -->
+        <div class="payment-summary">
+            <div class="summary-title">Payment Summary</div>
+            <div class="summary-items">
+                <!-- created using JS -->
+            </div>
+            <div class="summary-subtotal">
+                <div class="summary-subtotal-title">Subotal</div>
+                <div class="summary-subtotal-price">RM0</div>
+            </div>
+            <div class="summary-shippingfee">
+                <div class="summary-shp-title">Shipping Fee</div>
+                <div class="summary-shp-price">RM  4.00</div>
+            </div>
+            <div class="summary-total">
+                <div class="summary-total-title">Total Payable</div>
+                <div class="summary-total-price">RM0</div>
+            </div>
+            <div class="tax-info">Price includes all taxes</div>
+            
+        </div>
+
+        <!-- user info -->
+        <div class="user-info">
+            <!-- forms -->
+            <div class="user-forms">
+                <form  action="thankyou.html" method="get" target="">
+
+                    <!-- first section -->
+                    <div class="info_1" style="visibility: visible; display: block;" > 
+                        <div class="info-title">User Information</div>
+                        <div class="username-lbl">
+                            <label id="lbl-fname" for="fname">First Name</label>
+                            <label id="lbl-lname" for="lname">Last Name</label>
+                        </div>
+                        <div class="username">
+                            <input type="text" id="fname" name="fname" placeholder="Will" onfocus="this.placeholder=''" onblur="this.placeholder='Will'">
+                            <input type="text" id="lname" name="lname" placeholder="Smith" onfocus="this.placeholder=''" onblur="this.placeholder='Smith'">
+                        </div>
+                        <div class="email">
+                            <div class="email-lbl">
+                                <label id="lbl-email" for="email">Email</label>
+                            </div>
+                            <input type="email" id="email" name="email" placeholder="someone@example.com" onfocus="this.placeholder=''" onblur="this.placeholder='someone@example.com'">
+                        </div>
+                        <div class="phone">
+                            <div class="phone-lbl">
+                                <label id="lbl-phone" for="phone">Contact Number</label>
+                            </div>
+                            <input type="tel" id="phone" name="phone" placeholder="012-3456789" onfocus="this.placeholder=''" onblur="this.placeholder='012-3456789'">
+                        </div>
+                        <!-- NEXT button -->
+                        <div class="next">
+                            <input class="btn btn-next" type="button" value="next" onclick="pagechange(1,2);">
+                        </div>
+                    </div>
+
+                    <!-- second section -->
+                    <div class="info_2" style="visibility: hidden; display: none;" >
+                        <div class="info-title">Shipping Information</div>
+                        <div class="country">
+                            <select id="country" name="country">
+                                <option value="Malaysia">Malaysia </option>
+                                <option value="Singapore">Singapore </option>
+                                <option value="Thailand">Thailand </option>
+                                <option value="Indonesia">Indonesia </option>
+                                <option value="Filipina">Filipina </option>
+                            </select>
+                        </div>
+                        <input type="text" id="address" name="address" placeholder="address">
+                        <!-- PREVIOUS and NEXT buttons -->
+                        <input type="button" value="back" onclick="pagechange(2,1);">
+                        <input type="button" value="next" onclick="pagechange(2,3);">
+                    </div>
+
+                    <!-- third section -->
+                    <div class="info_3" style="visibility: hidden; display: none;" >
+                        <div class="info-title">Payment Information</div>
+                        <input type="text" id="payment" name="payment" placeholder="addpayment">
+                        <!-- PREVIOUS and NEXT buttons -->
+                        <input type="button" value="back" onclick="pagechange(3,2);">
+                        <input type="submit" value="Submit" class="btn-pay">
+                    </div>
+                </form>
+            </div>
+            <!-- mini footer -->
+            <div class="footer">
+                <p>policy</p>
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+</html>

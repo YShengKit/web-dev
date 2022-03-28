@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles_cart.css">
+    <link rel="icon" type="image/x-icon" href="Images\icon.webp" >
+    <script src="cart.js" defer></script>
+    <!-- <script src="function.js" async></script> -->
+</head>
+<body>
+    <!-- Header section -->
+    <header class="main-header">
+        <nav class="menu-horizontal nav">
+            <a href="/" class="brand-name">Honey Bee</a>
+            <ul class="menu-bar">
+                <li class="menu-list"><a href="product4.html">HOME</a></li>
+                <li class="menu-list"><a href="product3.html">PRODUCTS</a></li>
+                <li class="menu-list"><a href="">ABOUT US</a></li>
+                <li class="menu-list"><a class="active" href="cart.html">CART<span class="badge">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="content-cart">
+        <!-- Cart -->
+        <div class="title">Cart</div>
+        
+        <div class="cart-header">
+            <div class="cart-item-header">ITEM</div>
+            <div class="cart-price-header ">PRICE</div>
+            <div class="cart-quantity-header ">QUANTITY</div>
+        </div>
+
+        <div class="cart-items">
+            <!-- created using JS -->
+        </div>
+
+
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">RM0</span>
+            <button class="btn btn-checkout" type="button">CHECKOUT</button>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <h2>copyright@2022 HoneyBee</h2>
+    </footer>
+
+</body>
+</html>
